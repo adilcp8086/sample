@@ -1,0 +1,79 @@
+Github
+=======
+its acloud based system
+
+1-to store code
+2-to share code
+3-host small website
+4-version control
+
+gitlab,bitbucket: this are same as like Github
+
+git
+====
+tool used to perform github operation
+
+remote repository: storage space in github
+
+local repository : storages space in our  system for github
+
+local storage : normal storage in our system
+
+
+BASIC GIT OPERATIONS
+=====================
+
+1-push- uploading code from local repo to remote repo
+2-clone- downloading the entire code from remote repo to local repo
+3-pull- downloading only the updated files/code
+
+how this operations are performing
+===================================
+developer side
+----------------
+
+local storage (using git add) > staging area(git commit) >local repo (git push) > remote repo
+
+requirments
+============
+1- need an account in github
+2-git must be installed in the system
+
+initial setup
+===============
+git config--global user.name "git username"
+git config--global user.email "email id"
+
+commands for pushing the code  initialy
+=======================================
+to initialize particular folder as git repository
+1-git init
+
+add origin
+2-git remote add origin github _repo_url
+
+to list the files that need to be pushed (red in color)
+3-git status
+
+to copy file form local storage to staging area
+4-git add
+
+to copy file from staging area to local repository
+5-git commit -m "message"
+
+to copy files from local repository to remote repository
+6-git push origin master
+
+
+from second time onwards
+===========================
+
+step 3 to step 6
+
+to download full code
+=======================
+git clone  clone_github_url
+
+to download only changes
+=========================
+git pull origin master
